@@ -1,0 +1,1 @@
+import db from './database.js';db.run("CREATE TABLE IF NOT EXISTS meals (id INTEGER PRIMARY KEY, name TEXT, price INTEGER)");[['محشي',80],['بط',160]].forEach(m=>db.run("INSERT INTO meals (name,price) VALUES (?,?)",m));
